@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calendar — L.E.A. Trio</title>
+  <meta name="description" content="Upcoming gigs for L.E.A. Trio." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Background logo pulled from /images */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: url('images/LEA_logo_circle.png') no-repeat center center;
+      background-size: 42vmin;
+      opacity: 0.08;
+      z-index: 0;
+    }
+    body > * { position: relative; z-index: 1; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand"><a href="index.html">L.E.A. Trio</a></div>
+      <nav class="menu">
+        <a href="about.html">About</a>
+        <a href="music.html">Music</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Calendar</h1>
+        <ul class="gigs">
+          <li>
+            <div class="date">Sunday February 1st 7PM</div>
+            <div class="venue">Portlease Jazz Festival - Peig's Bar</div>
+            <div class="city"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+      <div>© <span id="year"></span> L.E.A. Trio</div>
+      <div style="display:flex;gap:14px;"><a href="contact.html">Booking</a></div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

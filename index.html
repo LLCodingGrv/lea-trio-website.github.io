@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>L.E.A. Trio — Contemporary Jazz (Dublin)</title>
+  <meta name="description" content="L.E.A. Trio — contemporary jazz from Dublin. Arranged standards and originals with melodic bass, blues‑rooted guitar, and creative drums." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: url('images/LEA_logo_circle.png') no-repeat center center;
+      background-size: 42vmin;
+      opacity: 0.08;
+      z-index: 0;
+    }
+    body > * { position: relative; z-index: 1; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand"><a href="index.html">L.E.A. Trio</a></div>
+      <nav class="menu">
+        <a href="about.html">About</a>
+        <a href="music.html">Music</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="badge">Dublin • Contemporary Jazz</span>
+          <h1>Part traditional, part modern — <strong>L.E.A.</strong></h1>
+          <p>Arranged standards and originals with melodic bass, blues‑rooted guitar, and creative drums.</p>
+          <div class="cta">
+            <a class="button primary" href="#video">Watch the featured video</a>
+            <a class="button secondary" href="contact.html">Book the trio</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="embed">
+            <iframe id="video" src="https://www.youtube.com/embed/kkVAJBPhgbA" title="L.E.A. Trio — Featured Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <strong>Featured:</strong> New video — L.E.A. Trio • <a href="https://www.youtube.com/watch?v=kkVAJBPhgbA" target="_blank" rel="noopener">Open on YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Upcoming dates</h2>
+        <ul class="gigs">
+          <li>
+            <div class="date">—</div>
+            <div class="venue">New shows TBA</div>
+            <div class="city"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+      <div>© <span id="year"></span> L.E.A. Trio</div>
+      <div style="display:flex;gap:14px;">
+        <a href="music.html">YouTube</a>
+        <a href="contact.html">Booking</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
